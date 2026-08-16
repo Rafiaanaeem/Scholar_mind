@@ -16,7 +16,6 @@ class DatabaseManager:
         """Creates the necessary tables if they do not exist."""
         with self.get_connection() as conn:
             cursor = conn.cursor()
-            
             # Users Table
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS users (
