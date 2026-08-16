@@ -5,18 +5,18 @@
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-* **💡 AI Topic Discovery:** Instant generation of 5 trending academic research topics based on any field of study, powered by Groq LPUs.
-* **📄 Research Package Generation:** Produces structured research foundations containing Executive Summaries, Research Questions, Literature Review Focus areas, Methodologies, and Future Directions.
-* **🔐 Secure Authentication & RBAC:** Native user registration and login utilizing `bcrypt` password hashing with Role-Based Access Control (`Admin` vs. `User`).
-* **📥 Multi-Format Export:** In-memory generation and download of research documents in both PDF (`reportlab`) and Word (`python-docx`) formats.
-* **📜 Local History Tracking:** SQLite-backed persistence storing user query logs and research documents, with automatic UTC-to-Local timezone conversions for accurate timestamping.
-* **👑 Admin Dashboard:** Administrative view for system auditing and account creation monitoring.
+* ** AI Topic Discovery:** Instant generation of 5 trending academic research topics based on any field of study, powered by Groq LPUs.
+* ** Research Package Generation:** Produces structured research foundations containing Executive Summaries, Research Questions, Literature Review Focus areas, Methodologies, and Future Directions.
+* ** Secure Authentication & RBAC:** Native user registration and login utilizing `bcrypt` password hashing with Role-Based Access Control (`Admin` vs. `User`).
+* ** Multi-Format Export:** In-memory generation and download of research documents in both PDF (`reportlab`) and Word (`python-docx`) formats.
+* ** Local History Tracking:** SQLite-backed persistence storing user query logs and research documents, with automatic UTC-to-Local timezone conversions for accurate timestamping.
+* ** Admin Dashboard:** Administrative view for system auditing and account creation monitoring.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology / Library | Purpose |
 | :--- | :--- | :--- |
@@ -29,7 +29,7 @@
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 scholarmind/
@@ -60,7 +60,7 @@ scholarmind/
 
 ---
 
-## 🚀 Quick Start & Installation
+##  Quick Start & Installation
 
 ### Prerequisites
 
@@ -123,7 +123,7 @@ The app will open automatically in your browser at `http://localhost:8501`.
 
 ---
 
-## 🔄 How It Works
+##  How It Works
 
 ```text
 Field of Study
@@ -142,7 +142,7 @@ Export as PDF / DOCX / Markdown
 
 ---
 
-## 🧪 Usage & Testing Guide
+##  Usage & Testing Guide
 
 1. **Create Account:** Navigate to the **Register** tab and create a new account.
 2. **Admin Setup:** To grant an account `Admin` privileges, directly modify the `role` column in `database/scholarmind.db` or initialize an admin user via `db_manager.py`.
@@ -152,7 +152,7 @@ Export as PDF / DOCX / Markdown
 
 ---
 
-## 🔒 Security Best Practices
+##  Security Best Practices
 
 * **Secrets Isolation:** All API keys and session identifiers are stored in `.env` and excluded from version control via `.gitignore`.
 * **Password Hashing:** Passwords are salted and hashed using `bcrypt` prior to database insertion. Raw passwords are never stored.
@@ -160,12 +160,10 @@ Export as PDF / DOCX / Markdown
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Rafia Naeem**
 
 *Bachelor of Computer Science*
-
-```
 
 ```
