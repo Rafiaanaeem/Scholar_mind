@@ -7,12 +7,12 @@
 
 ##  Key Features
 
-* ** AI Topic Discovery:** Instant generation of 5 trending academic research topics based on any field of study, powered by Groq LPUs.
-* ** Research Package Generation:** Produces structured research foundations containing Executive Summaries, Research Questions, Literature Review Focus areas, Methodologies, and Future Directions.
-* ** Secure Authentication & RBAC:** Native user registration and login utilizing `bcrypt` password hashing with Role-Based Access Control (`Admin` vs. `User`).
-* ** Multi-Format Export:** In-memory generation and download of research documents in both PDF (`reportlab`) and Word (`python-docx`) formats.
-* ** Local History Tracking:** SQLite-backed persistence storing user query logs and research documents, with automatic UTC-to-Local timezone conversions for accurate timestamping.
-* ** Admin Dashboard:** Administrative view for system auditing and account creation monitoring.
+* **AI Topic Discovery:** Instant generation of 5 trending academic research topics based on any field of study, powered by Groq LPUs.
+* **Research Package Generation:** Produces structured research foundations containing Executive Summaries, Research Questions, Literature Review Focus areas, Methodologies, and Future Directions.
+* **Secure Authentication & RBAC:** Native user registration and login utilizing `bcrypt` password hashing with Role-Based Access Control (`Admin` vs. `User`).
+* **Multi-Format Export:** In-memory generation and download of research documents in both PDF (`reportlab`) and Word (`python-docx`) formats.
+* **Local History Tracking:** SQLite-backed persistence storing user query logs and research documents, with automatic UTC-to-Local timezone conversions for accurate timestamping.
+* **Admin Dashboard:** Administrative view for system auditing and account creation monitoring.
 
 ---
 
