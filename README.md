@@ -1,3 +1,4 @@
+```markdown
 # ScholarMind
 
 **ScholarMind** is an enterprise-ready, AI-powered academic research assistant designed to streamline topic discovery, generate structured literature review foundations, and manage research artifacts. Built with a modular Python architecture, it leverages high-speed inference via the Groq API (Llama 3), secure native authentication, local SQLite persistence, and dynamic document generation (PDF/DOCX).
@@ -55,18 +56,28 @@ scholarmind/
 ├── requirements.txt
 └── README.md
 
-Quick Start & Installation
-Prerequisites
-Python 3.10 or higher
+```
 
-A free Groq Cloud API Key
+---
 
-1. Clone the Repository
-Bash
+## 🚀 Quick Start & Installation
+
+### Prerequisites
+
+* Python 3.10 or higher
+* A free [Groq Cloud API Key](https://console.groq.com/)
+
+### 1. Clone the Repository
+
+```bash
 git clone [https://github.com/your-username/ScholarMind.git](https://github.com/your-username/ScholarMind.git)
 cd ScholarMind
-2. Set Up a Virtual Environment
-Bash
+
+```
+
+### 2. Set Up a Virtual Environment
+
+```bash
 # On Windows
 python -m venv venv
 venv\Scripts\activate
@@ -74,26 +85,47 @@ venv\Scripts\activate
 # On macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
-3. Install Dependencies
-Bash
+
+```
+
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-4. Configure Environment Variables
-Create a .env file in the root directory by copying .env.example:
 
-Bash
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env` file in the root directory by copying `.env.example`:
+
+```bash
 cp .env.example .env
-Open .env and add your Groq API key:
 
-Code snippet
+```
+
+Open `.env` and add your Groq API key:
+
+```env
 GROQ_API_KEY=your_actual_groq_api_key_here
 GROQ_MODEL=llama3-8b-8192
-5. Launch the Application
-Bash
-streamlit run app.py
-The app will open automatically in your browser at http://localhost:8501.
 
-🔄 How It Works
-Plaintext
+```
+
+### 5. Launch the Application
+
+```bash
+streamlit run app.py
+
+```
+
+The app will open automatically in your browser at `http://localhost:8501`.
+
+---
+
+## 🔄 How It Works
+
+```text
 Field of Study
       ↓
 AI Topic Discovery
@@ -105,25 +137,35 @@ Generate Research Package
 Save to Research History
       ↓
 Export as PDF / DOCX / Markdown
-🧪 Usage & Testing Guide
-Create Account: Navigate to the Register tab and create a new account.
 
-Admin Setup: To grant an account Admin privileges, directly modify the role column in database/scholarmind.db or initialize an admin user via db_manager.py.
+```
 
-Discover Topics: Enter a field of study (e.g., Quantum Machine Learning) in the Research Workspace and click Discover Topics.
+---
 
-Generate Package: Select a topic and click Generate Research Package to output the full document.
+## 🧪 Usage & Testing Guide
 
-Export & Review: Download the generated output as PDF/DOCX or visit Research History to view saved logs stamped in your local timezone.
+1. **Create Account:** Navigate to the **Register** tab and create a new account.
+2. **Admin Setup:** To grant an account `Admin` privileges, directly modify the `role` column in `database/scholarmind.db` or initialize an admin user via `db_manager.py`.
+3. **Discover Topics:** Enter a field of study (e.g., *Quantum Machine Learning*) in the **Research Workspace** and click **Discover Topics**.
+4. **Generate Package:** Select a topic and click **Generate Research Package** to output the full document.
+5. **Export & Review:** Download the generated output as PDF/DOCX or visit **Research History** to view saved logs stamped in your local timezone.
 
-🔒 Security Best Practices
-Secrets Isolation: All API keys and session identifiers are stored in .env and excluded from version control via .gitignore.
+---
 
-Password Hashing: Passwords are salted and hashed using bcrypt prior to database insertion. Raw passwords are never stored.
+## 🔒 Security Best Practices
 
-SQL Injection Prevention: All database operations utilize parameterized queries (? placeholders).
+* **Secrets Isolation:** All API keys and session identifiers are stored in `.env` and excluded from version control via `.gitignore`.
+* **Password Hashing:** Passwords are salted and hashed using `bcrypt` prior to database insertion. Raw passwords are never stored.
+* **SQL Injection Prevention:** All database operations utilize parameterized queries (`?` placeholders).
 
-👩‍💻 Author
-Rafia Naeem
+---
 
-Bachelor of Computer Science
+## 👩‍💻 Author
+
+**Rafia Naeem**
+
+*Bachelor of Computer Science*
+
+```
+
+```
