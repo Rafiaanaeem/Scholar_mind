@@ -9,8 +9,6 @@ class AIService:
     """Handles interactions with the Groq LLM API."""
 
     def __init__(self):
-        # Initialize the Groq client using the key from your settings
-        # Note: Ensure your settings.py has GROQ_API_KEY and GROQ_MODEL defined!
         self.client = Groq(api_key=settings.GROQ_API_KEY)
         self.model_name = getattr(settings, 'GROQ_MODEL', 'llama3-8b-8192') 
 
@@ -20,22 +18,20 @@ class AIService:
         
         for attempt in range(max_retries):
             try:
-                # Groq uses the standard OpenAI-style chat completion format
                 completion = self.client.chat.completions.create(
                     model=self.model_name,
                     messages=[
                         {"role": "system", "content": "You are an expert academic research assistant."},
                         {"role": "user", "content": prompt}
                     ],
-                    temperature=0.7,
+                    temperature=0.4,
                 )
-                # Extract and return the text from the response
                 return completion.choices[0].message.content
                 
             except Exception as e:
                 logger.error(f"Groq API Error on attempt {attempt + 1}: {str(e)}")
                 if attempt < max_retries - 1:
-                    time.sleep(2 ** attempt)  # Wait 1s, then 2s before retrying
+                    time.sleep(2 ** attempt)  
                 else:
                     logger.error("Max retries reached. AI request failed.")
                     return f"Error: Unable to generate response from Groq. Details: {str(e)}"
