@@ -20,7 +20,6 @@ def _render_workspace(ai_service: AIService, db_manager: DatabaseManager, user: 
     
     st.subheader("💡 Phase 1: Topic Discovery")
     col1, col2 = st.columns([3, 1])
-    
     with col1:
         field = st.text_input("Enter your Field of Study / Subject Area:", placeholder="e.g. Cybersecurity, Machine Learning, Economics")
     with col2:
