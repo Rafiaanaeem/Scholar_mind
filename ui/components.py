@@ -38,7 +38,6 @@ def render_sidebar():
         st.sidebar.success(f"Logged in as: **{user.get('username', 'User')}**")
         st.sidebar.caption(f"Role: {user.get('role', 'user').capitalize()}")
         
-        # Navigation Options
         pages = ["Research Workspace", "Research History"]
         if user.get('role') == 'admin':
             pages.append("Admin Dashboard")
