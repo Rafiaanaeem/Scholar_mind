@@ -27,7 +27,6 @@ class AuthService:
         if len(password) < 6:
             return False, "Password must be at least 6 characters long."
             
-        # Security check to prevent bcrypt 72-byte limit crashes
         if len(password.encode('utf-8')) > 72:
             return False, "Password is too long. Please use a password under 72 characters."
             
