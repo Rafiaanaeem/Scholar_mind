@@ -1,5 +1,4 @@
-```markdown
-# ScholarMind
+## ScholarMind
 
 **ScholarMind** is an enterprise-ready, AI-powered academic research assistant designed to streamline topic discovery, generate structured literature review foundations, and manage research artifacts. Built with a modular Python architecture, it leverages high-speed inference via the Groq API (Llama 3), secure native authentication, local SQLite persistence, and dynamic document generation (PDF/DOCX).
 
