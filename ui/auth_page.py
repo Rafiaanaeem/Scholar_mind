@@ -11,7 +11,6 @@ def render_auth_page(auth_service: AuthService):
     with col2:
         tab1, tab2 = st.tabs(["🔑 Login", "📝 Register"])
         
-        # --- TAB 1: LOGIN ---
         with tab1:
             st.subheader("Welcome Back")
             login_username = st.text_input("Username", key="login_user")
@@ -30,7 +29,6 @@ def render_auth_page(auth_service: AuthService):
                 else:
                     st.warning("Please fill in all fields.")
                     
-        # --- TAB 2: REGISTER ---
         with tab2:
             st.subheader("Create an Account")
             reg_username = st.text_input("Username", key="reg_user")
