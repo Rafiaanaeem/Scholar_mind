@@ -1,8 +1,7 @@
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-PAKISTAN_TZ = ZoneInfo("Asia/Karachi")
-
+PAKISTAN_TZ = ZoneInfo("Asia/Islamabad")
 
 def utc_to_local(timestamp: str) -> str:
     """Convert a SQLite UTC timestamp to Pakistan local time."""
